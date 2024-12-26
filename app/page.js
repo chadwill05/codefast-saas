@@ -14,6 +14,7 @@ export default function Home() {
         build products your customers will love.
       </div>
       <ButtonLogin isLoggedIn={isLoggedIn} name={name}/>
+        
     </main>
   );
 }
