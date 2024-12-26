@@ -1,14 +1,11 @@
 import Link from "next/link";
-const ButtonLogin = (props) => {
 
-
-    if (props.isLoggedIn) {
-        return <Link href="/dashboard">Welcome back {props.name}</Link>
-    } else {
-        return <button>Login</button>;
-    }
-
-    return <Link href="/dashboard">ButtonLogin</Link>
+// This button is used to log users in or send them to the dashboard
+const ButtonLogin = (isLoggedIn, name) => {
+    if (isLoggedIn) {
+        return <Link href="/dashboard">Welcome back {name}</Link>
+    } 
+    return <button>Login</button>;
 };
 
 export default ButtonLogin;
