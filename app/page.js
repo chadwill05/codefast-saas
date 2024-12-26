@@ -102,7 +102,7 @@ function Home() {
                 Unlimited Boards</li>
                
              </ul>
-             <ButtonLogin isLoggedIn={isLoggedIn} name={name}/>
+             <ButtonLogin isLoggedIn={isLoggedIn} name={name} extraStyle="w-full"/>
            </div>
            </div>
       </section>
