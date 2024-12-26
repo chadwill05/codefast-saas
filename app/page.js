@@ -1,7 +1,10 @@
-import Image from "next/image";
-import Link from "next/link";
+
+import ButtonLogin from "@/components/ButtonLogin";
 
 export default function Home() {
+  const isLoggedIn = true;
+  const name = "Chad";
+
   return (
     <main>
       <h1>Collect customer feedback to build better products</h1>
@@ -10,7 +13,7 @@ export default function Home() {
         Create a feedback board in minutes, priotize features, and 
         build products your customers will love.
       </div>
-      <Link href="/dashboard">Dashboard</Link>
+      <ButtonLogin isLoggedIn={isLoggedIn} name={name}/>
     </main>
   );
 }
